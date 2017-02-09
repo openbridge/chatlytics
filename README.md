@@ -1,5 +1,24 @@
-# Chatlytics
+
+# Overview
 This project is meant to use chat as an interface to a simple bot which can be used to run SQL queries on data. These queries ultimately output images of the data charts into the chat window.
+
+- [Prerequisites](#prerequisites)
+- [How To Interact With Fetch, Your Analytics Bot](#how-to-interact-with-fetch-your-analytics-bot)
+	- [Step 1: Add To Slack](#step-1-add-to-slack)
+	- [Step 2: Setup Your Database connection](#step-2-setup-your-database-connection)
+	- [Step 3: Ask Fetch To Run Queries For You](#step-3-ask-fetch-to-run-queries-for-you)
+- [Teaching Fetch Custom Commands](#teaching-fetch-custom-commands)
+	- [Step 1: Defining Custom Commands Via YAML File](#step-1-defining-custom-commands-via-yaml-file)
+	- [Step 2: Train Fetch To Understand Your Command](#step-2-train-fetch-to-understand-your-command)
+		- [Drag-and-Drop](#drag-and-drop)
+		- [Attachments](#attachments)
+		- [Remote Import from URL](#remote-import-from-url)
+	- [Step 3: Tell Fetch To Run Your New Commands](#step-3-tell-fetch-to-run-your-new-commands)
+- [Creating Your Own Themes](#themes)
+- [Notes](#notes)
+	- [MySQL](#mysql)
+- [Issues](#issues)
+- [Contributing](#contributing)
 
 ## Prerequisites
 You will need:
@@ -40,17 +59,18 @@ How do you train Fetch to understand new commands. There are three easy steps:
 * Your Train Fetch To Understand The Commands
 * You Ask Fetch To Run Your Commands
 
-
 ### Step 1: Defining Custom Commands Via YAML File
 To teach Fetch a new command, you need to first create a YAML definition. This is what a sample YAML definition looks like:
 
 ```
+
 queries:
     -   name: test_query
         query: select testColumn, count(*) from testTable group by testColumn
         chart_type: bar_chart
         chart_description: test
         style: blue
+
 ```
 
 Each element serves a purpose in helping Fetch understand what you want to have happen:
@@ -80,7 +100,9 @@ To import a remote YAML file from someplace like Github, you must specify a URL 
 
 For example, if the link is from GitHub you'll need to click the **Raw** button at the top of the file and use the resulting URL.
 
-`!define https://raw.githubusercontent.com/dtroberts/TestRepo/master/ymls/multidef.yml`
+```bash
+!define https://raw.githubusercontent.com/dtroberts/TestRepo/master/ymls/multidef.yml
+```
 
 
 ### Step 3: Tell Fetch To Run Your New Commands
@@ -91,7 +113,7 @@ we need examples
 
 **IMPORTANT**: Custom commands are removed upon shutting down or restarting servers. In a future release we will add persistence capabilities when training Fetch.
 
-# Themes
+# Creating Your Own Themes
 
 Did you know you Fetch allows you to customize the look and feel of your visualizations?  You can fully customize the colors and typography to fit your own preferences.  Themes define the style of the visualizations Fetch delivers to your team. Each Theme may be different, offering many choices to easily change the look and feel. Themes also separate the presentation styles from the underlying data. Using Themes allows you to quickly change the visual style and layout of a visualization with simple CSS edits.
 

@@ -1,4 +1,30 @@
+
+
 # Chatlytics Themes
+
+- [Pre-Installed Themes](#pre-installed-themes)
+	- [Big Blue](#big-blue)
+	- [Sunset](#sunset)
+	- [Spring](#spring)
+- [Designing a Theme - Customization Best Practices](#designing-a-theme-customization-best-practices)
+	- [Understanding Color & Typography](#understanding-color-typography)
+		- [Color](#color)
+			- [Sunset](#sunset)
+			- [Spring](#spring)
+			- [Blue](#blue)
+		- [Color Blindness](#color-blindness)
+			- [Color selection tools:](#color-selection-tools)
+			- [Inspiration palettes:](#inspiration-palettes)
+			- [Color contrast checker](#color-contrast-checker)
+	- [Typography](#typography)
+- [Building Your Theme](#building-your-theme)
+	- [Step 1: Naming & Setup](#step-1-naming-setup)
+	- [Step 2: Customization](#step-2-customization)
+- [You've set up your theme! Now what?](#youve-set-up-your-theme-now-what)
+	- [Installation](#installation)
+	- [Usage](#usage)
+
+
 Chatlytics data visualizations have customizable theme components: the color palette and typography. Users may create their own themes to use when generating visualizations.
 
 We include three amazing themes as a default, but you may want to create your own. We support that! The process is simple and if you follow best practices for the use of color and typography, you can create some highly customized and effective visualizations.
