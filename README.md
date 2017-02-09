@@ -55,14 +55,14 @@ The following is a list of available predefined commands:
   * Example: !table_count MyTable
 * `!count_compare <table_name> <date_column> <style>`: Generate gauge chart from comparing record count to the previous day.
   * Example: !count_compare MyTable timestamp blue
-  
-  <img src="./images/gaugechart.png" height=350px>
+
+  <img src="./images/gaugechart.png" height=270px>
 * `!date_compare <table_name> <date_column> <date1> <date2> <style>`: Generate gauge chart from comparing record count of two different days.
   * Example: !date_compare MyTable timestamp 01/01/16 07/07/16 sunset
 * `!chart <table_name> <date_column> <number_of_days> <style>`: Generate a bar chart of record counts from the specified table for the given number of days.
   * Example: !chart MyTable timestamp 10 spring
-  
-    <img src="./images/springbar.png" height=350px>
+
+    <img src="./images/springbar.png" height=270px>
 
 # Teaching Fetch Custom Commands
 In addition to the predefined commands Fetch understands, you can teach it new ones. This is done by feeding Fetch YAML files.  
@@ -107,6 +107,9 @@ With your YAML file completed, it is time to teach Fetch the new command. This w
 #### Drag-and-Drop
 
 The simplest way to import a command is by simply dragging a YAML file to the Slack window and clicking the "Upload" button. The bot will do the rest!
+
+<img src="./images/draganddrop.png" height=270px>
+
 
 #### Attachments
 
