@@ -45,11 +45,11 @@ You'll find a guide to these commands [here](https://www.chatlytics.co/guide.htm
 ### Step 2: Setup Your Database connection
 You'll want to start by setting up your database connection. Run the command `!dbconfig` and follow the prompts to get started.
 
-<img src="./images/db-config1.png" height=110px>
+<img src="./images/db-config1.png" height=150px>
 
 In addition to your database type, Fetch will need your host address-- which can be an IP address or domain, your username & password, port and database name. After you provide this info you'll be able to review the configuration and start giving Fetch commands!
 
-<img src="./images/db-config2.png" height=210px>
+<img src="./images/db-config2.png" height=290px>
 
 
 
