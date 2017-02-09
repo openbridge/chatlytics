@@ -1,7 +1,9 @@
 
 
 # Chatlytics Themes
+Chatlytics data visualizations have customizable theme components: the color palette and typography. This guide will help you understand how to create and use your own custom themes!
 
+- [Overview](#overview)
 - [Pre-Installed Themes](#pre-installed-themes)
 	- [Big Blue](#big-blue)
 	- [Sunset](#sunset)
@@ -25,22 +27,22 @@
 	- [Usage](#usage)
 
 
-Chatlytics data visualizations have customizable theme components: the color palette and typography. Users may create their own themes to use when generating visualizations.
 
-We include three amazing themes as a default, but you may want to create your own. We support that! The process is simple and if you follow best practices for the use of color and typography, you can create some highly customized and effective visualizations.
-
-Here's whats coming up:
+### Overview
+Here's whats coming up in this guide:
 
   1. We'll go through the 3 pre-installed Chatlytics themes and the thought process behind creating them
   2. Best practices for your customization
   3. Guide for implementation of your custom styles
-  4. Usage in messenger
+  4. How to tell Fetch to use your themes
 
 
 ## Pre-Installed Themes
-There are three themes already included in Chatlytics: Blue, Sunrise, and Spring. All of these themes were creating following Samantha Zhang's advice to use colors inspired by nature. Who is Samantha Zhang? Read her [article](https://blog.graphiq.com/finding-the-right-color-palettes-for-data-visualizations-fcd4e707a283#.sawb2zvkw) for some great advice.
+We include three amazing themes as a default, but you may want to create your own. We support that! The process is simple and if you follow best practices for the use of color and typography, you can create some highly customized and effective visualizations.
 
-#### Big Blue
+The three themes already included in Chatlytics are: Blue, Sunrise, and Spring. All of these themes were creating following Samantha Zhang's advice to use colors inspired by nature. Who is Samantha Zhang? Read her [article](https://blog.graphiq.com/finding-the-right-color-palettes-for-data-visualizations-fcd4e707a283#.sawb2zvkw) for some great advice.
+
+#### Blue
 
 Blue is a commonly loved color so we chose that for a monochromatic palette.
 
