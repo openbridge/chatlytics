@@ -1,0 +1,6 @@
+queries:
+    -   name: test_query
+        query: select testColumn, count(*) from testTable group by testColumn
+        chart_type: bar_chart
+        chart_description: test
+        style: blue

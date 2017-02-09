@@ -1,0 +1,12 @@
+queries:
+    -   name: ga_unique_visits
+        query: select date, count(distinct fullvisitorid || visitid) from ga_test_04 group by date
+        chart_type: bar_chart
+        chart_description: Unique visits by day for table ga_test_04
+        chart_style: blue
+
+    -   name: ga360_unique_visits
+        query: select date, count(distinct full_visitor_id || visit_id) from ga360_master group by date
+        chart_type: line_chart
+        chart_description: Unique visits by day for table ga360_master
+        chart_style: sunset
