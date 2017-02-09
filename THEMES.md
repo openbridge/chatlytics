@@ -1,17 +1,17 @@
 # Chatlytics Themes
-Chatlytics data visualizations have customizable components: the color palette and typography. Users may create their own themes to use when generating charts. When creating a theme, aesthetics should be considered, but more important is the legibility of the data visualization, which allows for better user engagement.
+Chatlytics data visualizations have customizable theme components: the color palette and typography. Users may create their own themes to use when generating visualizations.
 
 We include three amazing themes as a default, but you may want to create your own. We support that! The process is simple and if you follow best practices for the use of color and typography, you can create some highly customized and effective visualizations.
 
 Here's whats coming up:
-1. We'll go through the 3 pre-installed Chatlytics themes and the thought process behind creating them
-2. Best practices for your customization
-3. Guide for implementation of your custom styles
-4. Usage in messenger
+
+  1. We'll go through the 3 pre-installed Chatlytics themes and the thought process behind creating them
+  2. Best practices for your customization
+  3. Guide for implementation of your custom styles
+  4. Usage in messenger
+
 
 ## Pre-Installed Themes
-
-
 There are three themes already included in Chatlytics: Blue, Sunrise, and Spring. All of these themes were creating following Samantha Zhang's advice to use colors inspired by nature. Who is Samantha Zhang? Read her [article](https://blog.graphiq.com/finding-the-right-color-palettes-for-data-visualizations-fcd4e707a283#.sawb2zvkw) for some great advice.
 
 #### Big Blue
@@ -40,6 +40,7 @@ Spring is more varied and a brighter more fun palette.
 
 
 # Designing a Theme - Customization Best Practices
+When creating a theme, aesthetics should be considered, but more important is the legibility of the data visualization, which allows for better user engagement. We provide some guides, tips and samples to get your started!
 
 ## Understanding Color & Typography
 As we mentioned earlier you need to think about color and typography. Both are critical to creating visualizations that tell stories with your data.

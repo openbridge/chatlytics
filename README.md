@@ -91,6 +91,15 @@ we need examples
 
 **IMPORTANT**: Custom commands are removed upon shutting down or restarting servers. In a future release we will add persistence capabilities when training Fetch.
 
+# Themes
+
+Did you know you Fetch allows you to customize the look and feel of your visualizations?  You can fully customize the colors and typography to fit your own preferences.  Themes define the style of the visualizations Fetch delivers to your team. Each Theme may be different, offering many choices to easily change the look and feel. Themes also separate the presentation styles from the underlying data. Using Themes allows you to quickly change the visual style and layout of a visualization with simple CSS edits.
+
+You may wish to Themes for your own use, for a client project or to be shared with the Chatlytics community!
+
+Themes are simple to create and use. All you need is clean, valid CSS. Take a look at the theme
+[how-to](/THEMES.md) guide and templates.
+
 # Notes
 
 ### MySQL
