@@ -72,6 +72,18 @@ The following is a list of available predefined commands:
 
     <img src="./images/springbar.png" height=270px>
 
+## Interactive SVGs
+
+Fetch will return charts in slack, as well as a link to view an interactive SVG of the chart.
+
+		<img src="./images/svglink.png" height=210px>
+
+Here are some sample charts Fetch generated that you can interact with:
+* [Box & whiskers graph in Blue](http://www.alphadevx.com/a/388-Adding-a-read-only-MySQL-user)
+* [Bar chart in Spring ](http://www.alphadevx.com/a/388-Adding-a-read-only-MySQL-user)
+* [Donut chart in Sunset](http://www.alphadevx.com/a/388-Adding-a-read-only-MySQL-user)
+
+
 # Teaching Fetch Custom Commands
 In addition to the predefined commands Fetch understands, you can teach it new ones. This is done by feeding Fetch YAML files.  
 
