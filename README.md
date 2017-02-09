@@ -2,7 +2,9 @@
 ![Fetch](./images/fetch.png)
 
 # Overview
-This project is meant to use chat as an interface to a simple bot which can be used to run SQL queries on data. These queries ultimately output images of the data charts into the chat window.
+Chatlytics is a data query and visualization platform. Part of the platform is a bot called "Fetch". Think of Fetch not just as chatbot, but a analytics assistant too.
+
+Fetch has one key job to perform; help teams use their data to create beautiful visualizations without ever needing to leave Slack (or Hipchat). He takes care of the query, visualization, reports and charting grunt work so your team can focus on more important things. Fetch packages everything in flexible and customizable PNG & interactive SVGs.
 
 - [Prerequisites](#prerequisites)
 - [How To Interact With Fetch, Your Analytics Bot](#how-to-interact-with-fetch-your-analytics-bot)
