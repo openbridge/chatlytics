@@ -49,10 +49,14 @@ Fetch has built-in set of commands it understand. To see a list of available com
 
 The following is a list of available predefined commands:
 * `!list_tables`: Returns a list of all tables in the database.
-* `!table_count <table_name> <number_of_days>`: Returns the number of rows in the table.
-* `!count_compare <table_name> <date_column> <time_interval> <style>`: Compare record count to the previous day.
+* `!table_count <table_name>`: Returns the number of rows in the table.
+  * Example: !table_count MyTable
+* `!count_compare <table_name> <date_column> <style>`: Compare record count to the previous day.
+  * Example: !count_compare MyTable timestamp blue
 * `!date_compare <table_name> <date_column> <date1> <date2> <style>`: Compare record count of two different days.
+  * Example: !date_compare MyTable timestamp 01/01/16 07/07/16 sunset
 * `!chart <table_name> <date_column> <number_of_days> <style>`: Generate a bar chart of record counts from the specified table for the given number of days.
+  * Example: !chart MyTable timestamp 10 spring
 
 # Teaching Fetch Custom Commands
 In addition to the predefined commands Fetch understands, you can teach it new ones. This is done by feeding Fetch YAML files.  
@@ -95,7 +99,13 @@ With your YAML file completed, it is time to teach Fetch the new command. This w
 * Remote Import from URL
 
 #### Drag-and-Drop
+
+The simplest way to import a command is by simply dragging a YAML file to the Slack window and clicking the "Upload" button. The bot will do the rest!
+
 #### Attachments
+
+Alternatively, you can upload a YAML file by clicking the '+' sign at the bottom of the chat window, navigating to the file on your computer and clicking the "Upload" button.
+
 #### Remote Import from URL
 
 To import a remote YAML file from someplace like Github, you must specify a URL to that YAML file in the following format:
@@ -113,7 +123,33 @@ For example, if the link is from GitHub you'll need to click the **Raw** button 
 
 Once the query is defined and imported, it will be accessible via `!name`, where name is the value of the `name` field in the YAML file.
 
-we need examples
+### Examples
+Here is an example of a YAML file which would create a command `!my_first_command`:
+```
+queries:
+    -   name: my_first_command
+        query: select timestamp::date, sum(subscribers) from MyTable where datediff(day, end_time::date, getdate()::date) < 30 group by timestamp::date
+        chart_type: bar_chart
+        chart_description: My first query definition
+        style: blue
+```
+This would output a chart with the daily number of subscribers over the last 30 days.
+
+It is also possible to define multiple commands in the same file. This YAML file would define the commands `!MainTableQuery` and `!OtherTableQuery`:
+```
+queries:
+    -   name: MainTableQuery
+        query: select testColumn, count(*) from MainTable group by date
+        chart_type: bar_chart
+        chart_description: My first query definition
+        style: sunset
+
+    -   name: OtherTableQuery
+        query: select testColumn, count(*) from OtherTable group by timestamp
+        chart_type: line_chart
+        chart_description: Line chart for OtherTable record counts
+        style: spring
+```
 
 **IMPORTANT**: Custom commands are removed upon shutting down or restarting servers. In a future release we will add persistence capabilities when training Fetch.
 
