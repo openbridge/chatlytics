@@ -40,8 +40,10 @@ Chatlytics is only available for use with Slack at the moment. Other chat client
 
 Once you have connected Chatlytics, you can interact with Fetch by sending commands to the linked Slack account.
 
+You'll find a guide to these commands [here](https://www.chatlytics.co/guide.html). Just select a command in the dropdown to see what fetch will do with it and get additional tips.
+
 ### Step 2: Setup Your Database connection
-You'll want to start by setting up your database connection. Run the commmand `!dbconfig` and follow the prompts to get started.
+You'll want to start by setting up your database connection. Run the command `!dbconfig` and follow the prompts to get started.
 
 ### Step 3: Ask Fetch To Run Queries For You
 
@@ -51,12 +53,15 @@ The following is a list of available predefined commands:
 * `!list_tables`: Returns a list of all tables in the database.
 * `!table_count <table_name>`: Returns the number of rows in the table.
   * Example: !table_count MyTable
-* `!count_compare <table_name> <date_column> <style>`: Compare record count to the previous day.
+* `!count_compare <table_name> <date_column> <style>`: Generate gauge chart from comparing record count to the previous day.
   * Example: !count_compare MyTable timestamp blue
-* `!date_compare <table_name> <date_column> <date1> <date2> <style>`: Compare record count of two different days.
+		![gauge](./images/gaugechart.png)
+* `!date_compare <table_name> <date_column> <date1> <date2> <style>`: Generate gauge chart from comparing record count of two different days.
   * Example: !date_compare MyTable timestamp 01/01/16 07/07/16 sunset
 * `!chart <table_name> <date_column> <number_of_days> <style>`: Generate a bar chart of record counts from the specified table for the given number of days.
   * Example: !chart MyTable timestamp 10 spring
+	  ![springbar](./images/springbar.png)
+
 
 # Teaching Fetch Custom Commands
 In addition to the predefined commands Fetch understands, you can teach it new ones. This is done by feeding Fetch YAML files.  
