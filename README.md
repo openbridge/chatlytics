@@ -1,4 +1,6 @@
 
+![Fetch](./images/fetch.png)
+
 # Overview
 This project is meant to use chat as an interface to a simple bot which can be used to run SQL queries on data. These queries ultimately output images of the data charts into the chat window.
 
