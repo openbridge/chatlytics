@@ -1,0 +1,275 @@
+
+.color-0 {
+  stroke: #261e7f;
+  fill: #261e7f;
+}
+
+.color-1 {
+  stroke: #264aa5;
+  fill: #264aa5;
+}
+.color-2 {
+  stroke: #277ace;
+  fill: #277ace;
+}
+
+.color-3 {
+  stroke: #2bb3e5;
+  fill: #2bb3e5;
+}
+.color-4 {
+  stroke: #37d5fc;
+  fill: #37d5fc;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  src: url('/fonts/Open-Sans-300/Open-Sans-300.eot');
+  src: url('/fonts/Open-Sans-300/Open-Sans-300.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Light'),
+       local('Open-Sans-300'),
+       url('/fonts/Open-Sans-300/Open-Sans-300.woff2') format('woff2'),
+       url('/fonts/Open-Sans-300/Open-Sans-300.woff') format('woff'),
+       url('/fonts/Open-Sans-300/Open-Sans-300.ttf') format('truetype'),
+       url('/fonts/Open-Sans-300/Open-Sans-300.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Open-Sans-regular/Open-Sans-regular.eot');
+  src: url('/fonts/Open-Sans-regular/Open-Sans-regular.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans'),
+       local('Open-Sans-regular'),
+       url('/fonts/Open-Sans-regular/Open-Sans-regular.woff2') format('woff2'),
+       url('/fonts/Open-Sans-regular/Open-Sans-regular.woff') format('woff'),
+       url('/fonts/Open-Sans-regular/Open-Sans-regular.ttf') format('truetype'),
+       url('/fonts/Open-Sans-regular/Open-Sans-regular.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: normal;
+  src: url('/fonts/Open-Sans-600/Open-Sans-600.eot');
+  src: url('/fonts/Open-Sans-600/Open-Sans-600.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Semibold'),
+       local('Open-Sans-600'),
+       url('/fonts/Open-Sans-600/Open-Sans-600.woff2') format('woff2'),
+       url('/fonts/Open-Sans-600/Open-Sans-600.woff') format('woff'),
+       url('/fonts/Open-Sans-600/Open-Sans-600.ttf') format('truetype'),
+       url('/fonts/Open-Sans-600/Open-Sans-600.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/Open-Sans-700/Open-Sans-700.eot');
+  src: url('/fonts/Open-Sans-700/Open-Sans-700.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Bold'),
+       local('Open-Sans-700'),
+       url('/fonts/Open-Sans-700/Open-Sans-700.woff2') format('woff2'),
+       url('/fonts/Open-Sans-700/Open-Sans-700.woff') format('woff'),
+       url('/fonts/Open-Sans-700/Open-Sans-700.ttf') format('truetype'),
+       url('/fonts/Open-Sans-700/Open-Sans-700.svg#OpenSans') format('svg');
+}
+
+.xy-graph .dot {
+  stroke-width:6px;
+}
+
+text {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
+  font-size: 12px;
+}
+
+.legends .legend text {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  cursor:pointer;
+  fill: #4d5254;
+}
+
+.tooltip {
+  font-size:10px !important;
+  font-weight: 600 !important;
+}
+
+.axis text {
+  fill: #4d5254 !important;
+  cursor: default;
+}
+
+.axis text.major {
+  font-weight: 700 !important;
+}
+
+
+/* under is direct from pygal styles */
+.graph > .background {
+  fill: transparent;
+}
+
+.plot > .background {
+  fill: transparent;
+}
+
+text.no_data {
+  text-anchor: middle;
+}
+
+.centered {
+  text-anchor: middle;
+}
+
+.title {
+  text-anchor: middle !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  fill: #656c6f;
+  text-transform: uppercase !important;
+}
+
+.plot_title {
+  text-transform: none !important;
+  letter-spacing: none !important;
+  text-anchor: start;
+  font-weight: 300 !important;
+  fill: #4d5254 !important;
+  baseline-shift: sub;
+  font-size: 20px !important;
+}
+
+.legends .legend text {
+  fill-opacity: .9 !important;
+}
+
+.axis.x text {
+  text-anchor: middle;
+}
+
+.axis.x:not(.web) text[transform] {
+  text-anchor: start;
+}
+
+.axis.x:not(.web) text[transform].backwards {
+  text-anchor: end;
+}
+
+.axis.y text {
+  text-anchor: end;
+}
+.axis.y text[transform].backwards {
+  text-anchor: start;
+}
+
+.axis.y2 text {
+  text-anchor: start;
+}
+
+.axis.y2 text[transform].backwards {
+  text-anchor: end;
+}
+
+.axis .line,
+.axis .major.line {
+  stroke: #bbb;
+}
+
+.axis .guide.line {
+  stroke-dasharray: 5px;
+  stroke-linecap: round;
+  stroke: transparent;
+}
+
+.axis .major.guide.line {
+  stroke-linecap: round;
+  stroke: transparent;
+  stroke-dasharray: none;
+}
+
+.horizontal .axis.y .guide.line,
+.horizontal .axis.y2 .guide.line,
+.vertical .axis.x .guide.line {
+  opacity: 0;
+}
+
+.horizontal .axis.always_show .guide.line,
+.vertical .axis.always_show .guide.line {
+  opacity: 1 !important;
+}
+
+.axis.y .guides:hover .guide.line,
+.axis.y2 .guides:hover .guide.line,
+.axis.x .guides:hover .guide.line {
+  opacity: 1;
+  stroke: #727272 !important;
+  stroke-width:1;
+}
+
+.axis .guides:hover text {
+  opacity: 1;
+}
+
+/* normal state */
+.reactive {
+  fill-opacity: .85;
+  stroke-opacity: .9;
+}
+
+
+.reactive.active,
+.active .reactive {
+  fill-opacity: .9;
+  stroke-opacity: .95;
+  stroke-width: 1.5;
+}
+
+.dot {
+  stroke-width: 1px;
+  fill-opacity: 1;
+}
+
+.dot.active {
+  stroke-width: 5px;
+}
+
+.x_label {
+  font-size:9px !important;
+}
+
+.dot.negative {
+  fill: transparent;
+}
+
+text, tspan {
+  stroke: none !important;
+}
+.series text.active {
+  opacity: 1;
+}
+
+.tooltip rect {
+  fill-opacity: .85;
+  stroke-width: .5;
+  stroke: #ccc;
+  rx: 2;
+  ry: 2;
+  border-radius: 4px !important;
+}
+
+.tooltip text {
+  fill-opacity: 1;
+  fill: #4d5254 !important ;
+}
+
+.gauge-background {
+  fill: {{ style.value_background }};
+  stroke: none;
+}
