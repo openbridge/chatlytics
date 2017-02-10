@@ -76,7 +76,7 @@ The following is a list of available predefined commands:
 
 Fetch will return charts in slack, as well as a link to view an interactive SVG of the chart.
 
-		<img src="./images/svglink.png" height=210px>
+<img src="./images/svglink.png" height=370px>
 
 Here are some sample charts Fetch generated that you can interact with:
 * [Bar chart in Blue](https://s3.amazonaws.com/ob-dataviz/bluebar.svg)
@@ -129,7 +129,7 @@ The simplest way to import a command is by simply dragging a YAML file to the Sl
 
 <img src="./images/draganddrop.png" height=270px>
 
-<img src="./images/definecmd.png" height=270px>
+<img src="./images/definecmd.png" height=130px>
 
 
 
