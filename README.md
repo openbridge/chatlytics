@@ -79,8 +79,8 @@ Fetch will return charts in slack, as well as a link to view an interactive SVG 
 <img src="./images/svglink.png" height=370px>
 
 Here are some sample charts Fetch generated that you can interact with:
-* [Bar chart in Blue](https://s3.amazonaws.com/ob-dataviz/bluebar.svg)
-* [Box & whiskers graph in Spring ](https://s3.amazonaws.com/ob-dataviz/springbox.svg)
+* [Bar chart in Blue](./images/bluebar.svg)
+* [Box & whiskers graph in Spring ](./images/springbox.svg)
 
 
 # Teaching Fetch Custom Commands
