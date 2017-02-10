@@ -79,9 +79,8 @@ Fetch will return charts in slack, as well as a link to view an interactive SVG 
 		<img src="./images/svglink.png" height=210px>
 
 Here are some sample charts Fetch generated that you can interact with:
-* [Box & whiskers graph in Blue](http://www.alphadevx.com/a/388-Adding-a-read-only-MySQL-user)
-* [Bar chart in Spring ](http://www.alphadevx.com/a/388-Adding-a-read-only-MySQL-user)
-* [Donut chart in Sunset](http://www.alphadevx.com/a/388-Adding-a-read-only-MySQL-user)
+* [Bar chart in Blue](https://s3.amazonaws.com/ob-dataviz/bluebar.svg)
+* [Box & whiskers graph in Spring ](https://s3.amazonaws.com/ob-dataviz/springbox.svg)
 
 
 # Teaching Fetch Custom Commands
@@ -129,6 +128,10 @@ With your YAML file completed, it is time to teach Fetch the new command. This w
 The simplest way to import a command is by simply dragging a YAML file to the Slack window and clicking the "Upload" button. The bot will do the rest!
 
 <img src="./images/draganddrop.png" height=270px>
+
+<img src="./images/definecmd.png" height=270px>
+
+
 
 
 #### Attachments
