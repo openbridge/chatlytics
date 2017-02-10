@@ -129,6 +129,8 @@ The simplest way to import a command is by simply dragging a YAML file to the Sl
 
 <img src="./images/draganddrop.png" height=270px>
 
+On success, you'll see this:
+
 <img src="./images/definecmd.png" height=130px>
 
 
