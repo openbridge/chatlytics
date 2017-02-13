@@ -34,13 +34,21 @@ You will need:
 
 ### Step 1: Add To Slack
 
-The first step required to set the bot up involves clicking the "Add to Slack" button [here](https://www.chatlytics.co).
+The first step required to set the bot up involves clicking the "Add to Slack" button at [https://www.chatlytics.co](https://www.chatlytics.co).
+
+![Add To Slack](./images/add2slack.png)
 
 Chatlytics is only available for use with Slack at the moment. Other chat clients (Hipchat, Facebook, Skype...) will be added soon!
 
+
+
+#### Guide
+
 Once you have connected Chatlytics, you can interact with Fetch by sending commands to the linked Slack account.
 
-You'll find a guide to these commands [here](https://www.chatlytics.co/guide.html). Just select a command in the dropdown to see what fetch will do with it and get additional tips.
+You'll find a guide to these commands at [https://www.chatlytics.co/guide.html](https://www.chatlytics.co/guide.html). Just select a command in the dropdown to see what fetch will do with it and get additional tips.
+
+![Guide](./images/guide.png)
 
 ### Step 2: Setup Your Database connection
 You'll want to start by setting up your database connection. Run the command `!dbconfig` and follow the prompts to get started.
@@ -60,15 +68,16 @@ Fetch has built-in set of commands it understand. To see a list of available com
 The following is a list of available predefined commands:
 * `!list_tables`: Returns a list of all tables in the database.
 * `!table_count <table_name>`: Returns the number of rows in the table.
-  * Example: !table_count MyTable
+  * Example: `!table_count MyTable`
 * `!count_compare <table_name> <date_column> <style>`: Generate gauge chart from comparing record count to the previous day.
-  * Example: !count_compare MyTable timestamp blue
+  * Example: `!count_compare MyTable timestamp blue`
 
-  <img src="./images/gaugechart.png" height=270px>
+	<img src="./images/gaugechart.png" height=270px>
+
 * `!date_compare <table_name> <date_column> <date1> <date2> <style>`: Generate gauge chart from comparing record count of two different days.
-  * Example: !date_compare MyTable timestamp 01/01/16 07/07/16 sunset
+  * Example: `!date_compare MyTable timestamp 01/01/16 07/07/16 sunset`
 * `!chart <table_name> <date_column> <number_of_days> <style>`: Generate a bar chart of record counts from the specified table for the given number of days.
-  * Example: !chart MyTable timestamp 10 spring
+  * Example: `!chart MyTable timestamp 10 spring`
 
     <img src="./images/springbar.png" height=270px>
 
