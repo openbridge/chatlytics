@@ -1,4 +1,3 @@
-
 ![Fetch](./images/fetch.png)
 
 # Overview
@@ -39,8 +38,6 @@ The first step required to set the bot up involves clicking the "Add to Slack" b
 ![Add To Slack](./images/add2slack.png)
 
 Chatlytics is only available for use with Slack at the moment. Other chat clients (Hipchat, Facebook, Skype...) will be added soon!
-
-
 
 #### Guide
 
@@ -141,9 +138,6 @@ The simplest way to import a command is by simply dragging a YAML file to the Sl
 On success, you'll see this:
 
 <img src="./images/definecmd.png" height=130px>
-
-
-
 
 #### Attachments
 
