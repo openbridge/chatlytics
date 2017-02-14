@@ -39,14 +39,6 @@ The first step required to set the bot up involves clicking the "Add to Slack" b
 
 Chatlytics is only available for use with Slack at the moment. Other chat clients (Hipchat, Facebook, Skype...) will be added soon!
 
-#### Guide
-
-Once you have connected Chatlytics, you can interact with Fetch by sending commands to the linked Slack account.
-
-You'll find a guide to these commands at [https://www.chatlytics.co/guide.html](https://www.chatlytics.co/guide.html). Just select a command in the dropdown to see what fetch will do with it and get additional tips.
-
-![Guide](./images/guide.png)
-
 ### Step 2: Setup Your Database connection
 You'll want to start by setting up your database connection. Run the command `!dbconfig` and follow the prompts to get started.
 
@@ -59,6 +51,12 @@ In addition to your database type, Fetch will need your host address-- which can
 
 
 ### Step 3: Ask Fetch To Run Queries For You
+
+Once you have connected Chatlytics to yoru database, you can interact with Fetch by sending commands to the linked Slack account.
+
+You'll find a guide to these commands at [https://www.chatlytics.co/guide.html](https://www.chatlytics.co/guide.html). Just select a command in the dropdown to see what fetch will do with it and get additional tips.
+
+![Guide](./images/guide.png)
 
 Fetch has built-in set of commands it understand. To see a list of available commands Fetch can recognize, type `!help`.
 
