@@ -180,7 +180,13 @@ We have provided the pre-installed themes as references:
 # You've set up your theme! Now what?
 
 ## Installation
-To put your theme to use, you simply add the theme name you chose into your slack command.
+To put your theme to use, you can drag-and-drop your .css file into Slack or add it with the + button manually. 
+<img src="./images/draganddrop.png" height=270px>
 
 ## Usage
-For example: !line fall-harvest
+How you name your css file is how you will reference your theme in commands for Fetch. For example, if you name your file, 'fall-harvest.css', your command for a chart will look like this: 
+
+`!chart MyTable my_column 10 fall-harvest`
+
+If you need more information on structuring commands, please see the general [readme](https://github.com/openbridge/chatlytics/blob/master/README.md).
+
