@@ -26,7 +26,7 @@ Fetch has one key job to perform; help teams use their data to create beautiful 
 ## Prerequisites
 You will need:
 * Database connection parameters. Currently only `PostgreSQL`, `MySQL`, `Amazon Redshift`, `Amazon Aurora (Postgres/MYSQL)` and `AmazON RDS (Postgres/MYSQL)` are supported)
-* Slack account for the bot to use. If you do not have one you need to get yourself a Slack account. Go to the Slack webite: https://slack.com/
+* Slack account for the bot to use. If you do not have one you need to get yourself a Slack account. Go to the Slack website: https://slack.com/
 
 
 ## How To Interact With Fetch, Your Analytics Bot
@@ -52,7 +52,7 @@ In addition to your database type, Fetch will need your host address-- which can
 
 ### Step 3: Ask Fetch To Run Queries For You
 
-Once you have connected Chatlytics to yoru database, you can interact with Fetch by sending commands to the linked Slack account.
+Once you have connected Chatlytics to your database, you can interact with Fetch by sending commands to the linked Slack account.
 
 You'll find a guide to these commands at [https://www.chatlytics.co/guide.html](https://www.chatlytics.co/guide.html). Just select a command in the dropdown to see what fetch will do with it and get additional tips.
 
