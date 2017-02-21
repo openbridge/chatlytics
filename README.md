@@ -1,9 +1,9 @@
 ![Fetch](./images/fetch.png)
 
 # Overview: Chatlytics Data Visualization For Slack
-Chatlytics is a data query and visualization platform. Part of the platform is a bot called "Fetch". Think of Fetch not just as chatbot, but a analytics assistant too.
+Chatlytics is a data query and visualization platform. Part of the platform is a bot called "Fetch". Think of Fetch not just as a chatbot, but as an analytics assistant too.
 
-Fetch has one key job to perform; help teams use their data to create beautiful visualizations without ever needing to leave Slack (or Hipchat). Fetch takes care of the query, visualization, reports and charting grunt work so your team can focus on more important things. Fetch packages everything in flexible and customizable PNG & interactive SVGs.
+Fetch has one key job to perform: help teams use their data to create beautiful visualizations without ever needing to leave Slack (or Hipchat). Fetch takes care of the query, visualization and reporting grunt work so your team can focus on more important things. Fetch packages everything in flexible and customizable PNG & interactive SVGs.
 
 - [Prerequisites](#prerequisites)
 - [How To Interact With Fetch, Your Analytics Bot](#how-to-interact-with-fetch-your-analytics-bot)
@@ -25,8 +25,10 @@ Fetch has one key job to perform; help teams use their data to create beautiful 
 
 ## Prerequisites
 You will need:
+
 * Database connection parameters. Currently only `PostgreSQL`, `MySQL`, `Amazon Redshift`, `Amazon Aurora (Postgres/MYSQL)` and `AmazON RDS (Postgres/MYSQL)` are supported)
 * Slack account for the bot to use. If you do not have one you need to get yourself a Slack account. Go to the Slack website: https://slack.com/
+
 
 
 ## How To Interact With Fetch, Your Analytics Bot
@@ -37,14 +39,14 @@ The first step required to set the bot up involves clicking the "Add to Slack" b
 
 ![Add To Slack](./images/add2slack.png)
 
-Chatlytics is only available for use with Slack at the moment. Other chat clients (Hipchat, Facebook, Skype...) will be added soon!
+Chatlytics is only available for use with Slack at the moment. Other chat clients (Hipchat, Facebook, Skype, etc.) will be added soon!
 
-### Step 2: Setup Your Database connection
+### Step 2: Setup Your Database Connection
 You'll want to start by setting up your database connection. Run the command `!dbconfig` and follow the prompts to get started.
 
 <img src="./images/db-config1.png" height=150px>
 
-In addition to your database type, Fetch will need your host address-- which can be an IP address or domain, your username & password, port and database name. After you provide this info you'll be able to review the configuration and start giving Fetch commands!
+In addition to your database type, Fetch will need your host address (which can be an IP address or domain), your username & password, port and database name. After you provide this info, you'll be able to review the configuration and start giving Fetch commands!
 
 <img src="./images/db-config2.png" height=290px>
 
@@ -54,22 +56,22 @@ In addition to your database type, Fetch will need your host address-- which can
 
 Once you have connected Chatlytics to your database, you can interact with Fetch by sending commands to the linked Slack account.
 
-You'll find a guide to these commands at [https://www.chatlytics.co/guide.html](https://www.chatlytics.co/guide.html). Just select a command in the dropdown to see what fetch will do with it and get additional tips.
+You'll find a guide to these commands at [https://www.chatlytics.co/guide.html](https://www.chatlytics.co/guide.html). Just select a command in the dropdown to see what Fetch will do with it and get additional tips.
 
 ![Guide](./images/guide.png)
 
-Fetch has built-in set of commands it understand. To see a list of available commands Fetch can recognize, type `!help`.
+Fetch has a built-in set of commands it understands. To see a list of available commands Fetch can recognize, type `!help`.
 
 The following is a list of available predefined commands:
 * `!list_tables`: Returns a list of all tables in the database.
 * `!table_count <table_name>`: Returns the number of rows in the table.
   * Example: `!table_count MyTable`
-* `!count_compare <table_name> <date_column> <style>`: Generate gauge chart from comparing record count to the previous day.
+* `!count_compare <table_name> <date_column> <style>`: Generate gauge chart by comparing record count to the previous day.
   * Example: `!count_compare MyTable timestamp blue`
 
 	<img src="./images/gaugechart.png" height=270px>
 
-* `!date_compare <table_name> <date_column> <date1> <date2> <style>`: Generate gauge chart from comparing record count of two different days.
+* `!date_compare <table_name> <date_column> <date1> <date2> <style>`: Generate gauge chart by comparing record count of two different days.
   * Example: `!date_compare MyTable timestamp 01/01/16 07/07/16 sunset`
 * `!chart <table_name> <date_column> <number_of_days> <style>`: Generate a bar chart of record counts from the specified table for the given number of days.
   * Example: `!chart MyTable timestamp 10 spring`
@@ -78,7 +80,7 @@ The following is a list of available predefined commands:
 
 ## Interactive SVGs
 
-Fetch will return charts in slack, as well as a link to view an interactive SVG of the chart.
+Fetch will return charts in Slack, as well as a link to view an interactive SVG of the chart.
 
 <img src="./images/svglink.png" height=370px>
 
@@ -90,10 +92,10 @@ Here are some sample charts Fetch generated that you can interact with:
 # Teaching Fetch Custom Commands
 In addition to the predefined commands Fetch understands, you can teach it new ones. This is done by feeding Fetch YAML files.  
 
-How do you train Fetch to understand new commands. There are three easy steps:
+How do you train Fetch to understand new commands? There are three easy steps:
 
 * Define Your Command In YAML
-* Your Train Fetch To Understand The Commands
+* You Train Fetch To Understand The Commands
 * You Ask Fetch To Run Your Commands
 
 ### Step 1: Defining Custom Commands Via YAML File
@@ -118,7 +120,7 @@ Each element serves a purpose in helping Fetch understand what you want to have 
 * `chart_description`: This description will be included when your query is run.
 * `style`: the name of the style which you want the output to use
 
-When writing custom queries for `bar_chart` or `line_chart` graph types, it is expected that the first column will be the x-axis and the second will be the y-axis.
+When writing custom queries for `bar_chart` or `line_chart` graph types, it is expected that the first column will be the x-axis and the second column will be the y-axis.
 
 ### Step 2: Train Fetch To Understand Your Command
 With your YAML file completed, it is time to teach Fetch the new command. This will require that you import or "feed" the YAML file to Fetch. There are three methods for feeding Fetch new commands:
@@ -190,9 +192,9 @@ queries:
 
 # Creating Your Own Themes
 
-Did you know you Fetch allows you to customize the look and feel of your visualizations?  You can fully customize the colors and typography to fit your own preferences.  Themes define the style of the visualizations Fetch delivers to your team. Each Theme may be different, offering many choices to easily change the look and feel. Themes also separate the presentation styles from the underlying data. Using Themes allows you to quickly change the visual style and layout of a visualization with simple CSS edits.
+Did you know that Fetch allows you to customize the look and feel of your visualizations?  You can fully customize the colors and typography to fit your own preferences.  Themes define the style of the visualizations Fetch delivers to your team. Each Theme may be different, offering many choices to easily change the look and feel. Themes also separate the presentation styles from the underlying data. Using Themes allows you to quickly change the visual style and layout of a visualization with simple CSS edits.
 
-You may wish to Themes for your own use, for a client project or to be shared with the Chatlytics community!
+You may wish to create Themes for your own use, for a client project or to be shared with the Chatlytics community!
 
 Themes are simple to create and use. All you need is clean, valid CSS. Take a look at the theme
 [how-to](/THEMES.md) guide and templates.
